@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HearthStone Battlegrounds - Home Page</title>
+
+  <!-- Material.io files (CSS & Font/icons) -->
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.addEventListener("load", () => {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    });
+  </script>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+
+  <!-- Material.io files (JS and component registration) -->
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script>
+    const MDCBanner = mdc.banner.MDCBanner;
+    const MDCCheckbox = mdc.checkbox.MDCCheckbox;
+    const MDCChip = mdc.chips.MDCChip;
+    const MDCChipSet = mdc.chips.MDCChipSet;
+    const MDCCircularProgress = mdc.circularProgress.MDCCircularProgress;
+    const MDCDataTable = mdc.dataTable.MDCDataTable;
+    const MDCDialog = mdc.dialog.MDCDialog;
+    const MDCDrawer = mdc.drawer.MDCDrawer;
+    const MDCFloatingLabel = mdc.floatingLabel.MDCFloatingLabel;
+    const MDCFormField = mdc.formField.MDCFormField;
+    const MDCIconButtonToggle = mdc.iconButton.MDCIconButtonToggle;
+    const MDCLineRipple = mdc.lineRipple.MDCLineRipple;
+    const MDCLinearProgress = mdc.linearProgress.MDCLinearProgress;
+    const MDCList = mdc.list.MDCList;
+    const MDCMenu = mdc.menu.MDCMenu;
+    const MDCMenuSurface = mdc.menuSurface.MDCMenuSurface;
+    const MDCNotchedOutline = mdc.notchedOutline.MDCCNotchedOutline;
+    const MDCRadio = mdc.radio.MDCRadio;
+    const MDCRipple = mdc.ripple.MDCRipple;
+    const MDCSegmentedButton = mdc.segmentedButton.MDCSegmentedButton;
+    const MDCSelect = mdc.select.MDCSelect;
+    const MDCSlider = mdc.slider.MDCSlider;
+    const MDCSnackbar = mdc.snackbar.MDCSnackbar;
+    const MDCSwitch = mdc.switchControl.MDCSwitch;
+    const MDCTabBar = mdc.tabBar.MDCTabBar;
+    const MDCTextField = mdc.textField.MDCTextField;
+    const MDCTooltip = mdc.tooltip.MDCTooltip;
+    const MDCTopAppBar = mdc.topAppBar.MDCTopAppBar;
+  </script>
+</head>
+
+<body>
+  <!-- HTML web-elements -->
+  <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+        <span class="mdc-top-app-bar__title" href="index.html">HearthStone</span>
+        <img class="hsIcon" src="Images/HearthstoneIcon.png" alt="HearthStone Icon" href="index.html">
+      </section>
+    </div>
+  </header>
+
+  <aside class="mdc-drawer mdc-drawer-left mdc-drawer--modal">
+    <div class="mdc-drawer__header mdc-drawer__header-left">
+      <img class="logo-modal" src="Images/HearthstoneLogo.png" alt="Logo">
+      <h3 class="mdc-drawer__title">HearthStone Battlegrounds</h3>
+      <h6 class="mdc-drawer__subtitle">Learn like a pro, play like a pro!</h6>
+    </div>
+    <div class="mdc-drawer__content mdc-drawer__content-left">
+      <nav class="mdc-list">
+        <a class="mdc-list-item mdc-list-item-left mdc-list-item--activated" href="index.html" aria-current="page" tabindex="0">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+          <span class="mdc-list-item__text">Home</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item-left" href="./minions.html" aria-current="page" tabindex="0">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">style</i>
+          <span class="mdc-list-item__text">Minions</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item-left" href="./heroes.html">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">groups</i>
+          <span class="mdc-list-item__text">Heroes</span>
+        </a> <a class="mdc-list-item mdc-list-item-left" href="./builder.html">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">layers</i>
+          <span class="mdc-list-item__text">Builds</span>
+        </a>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="mdc-drawer-scrim"></div>
+
+  <main class="mdc-top-app-bar--fixed-adjust">
+    <h1>Hearthstone Battlegrounds</h1>
+
+    <h2>How to Play it</h2>
+    <h3>Hail your Heroes</h3>
+
+    <p>Hearthstone Battlegrounds will launch with 24 different Heroes, each with their own unique Hero power that changes the way you’ll recruit, battle, and strategize against your opponents. Once a match begins, you’ll be presented with a selection of available <a class="index-link" href="heroes.html">Heroes</a>. Take a little time to consider your options and start formulating a plan on how to best utilize your chosen Hero’s power.</p>
+
+    <img src="Images/HeroesPresentation.avif" alt="Heroes Presentation">
+
+    <p>For example, choosing Millificent Manastorm will passively cause all Mech minions that appear in Bob’s Tavern to gain an additional +1/+1, so you’ll likely want to focus on revving up your robotic recruits to make the most of Millificent. Alternatively, Arthas gives you the choice to spend a little of your hard-earned Tavern coin to grant your right-most minion Reborn, so careful positioning is key when you’re playing as the Lich King.</p>
+
+    <h3>It’s Tavern Time</h3>
+
+    <p>In Battlegrounds, rather than building a deck of cards, you’ll construct an ever-evolving board of Minions during visits to Bob’s Tavern at the start of the match and between combat rounds. You can check out the full list of Minions (and Heroes!) in Battlegrounds <a class="index-link" href="minions.html">HERE</a>.</p>
+    <!--Important! HERE has an link to Minions -->
+    <img src="Images/Recruit.avif" alt="Recruit">
+
+    <p>As the match progresses, you’ll be granted an increasing amount of Coin to be spent upgrading and modifying your board. Most things you do in the Tavern will cost you Coin, and Coins can’t be saved up to be spent in future rounds. Here are the options you’ll be able to consider, but how best to spend your coin is completely up to you! </p>
+
+    <img class="small-image" src="Images/BuyMinion3Coins.avif" alt="Coins">
+    <h4>Recruit a Minion:</h4>
+    <p>Every time you enter the Tavern, Bob will present you with a fresh line-up of minions willing and ready to be recruited onto your team. Of course, you’ll need to ply any minion you’d like to recruit with coins before they’ll do your bidding. Recruiting a Minion will cost you 3 coins.</p>
+
+    <img class="small-image" src="Images/Refresh.avif" alt="Refresh">
+    <h4>Refresh the Board:</h4>
+    <p>Don’t see anything you like, or looking for that perfect minion to round out your line-up? You can also refresh the current line-up of available Minions for 1 Coin.</p>
+
+    <img class="small-image" src="Images/SellMinion1Coin.avif" alt="Sell">
+    <h4>Fire a Minion:</h4>
+    <p>If it’s time to free up some space on the board or if a Minion just isn’t pulling their weight in your line-up, you can fire that Minion and regain 1 Coin.</p>
+
+    <img class="small-image" src="Images/Freeze.avif" alt="Freeze">
+    <h4>Freeze the Board:</h4>
+    <p>See something you need, but running low on Coin? You can freeze the current line-up for free, so that the same Minions will appear on your next visit to the tavern.</p>
+
+    <img class="small-image" src="Images/TavernTierUp.avif" alt="Tavern Tier">
+    <h4>Improve your Tavern:</h4>
+    <p>The strength and number of Bob’s Minion offerings and the base amount of damage dealt to enemy Health totals during combat rounds is determined by your Tavern Tier. The higher your Tavern Tier, the more powerful Minion offerings you’ll receive, and the more damage you’ll deal. The cost of upgrading your Tavern Tier will increase every time you upgrade to the next level, and choosing to forego upgrading your Tavern Tier will reduce the cost by 1 the next time you return to the Tavern.</p>
+
+    <img class="big-image" src="Images/GoldenMinion.webp" alt="Golden Reward">
+    <h4>Create a Triple:</h4>
+    <p>Recruiting three identical Minions will automatically combine them into a powerful golden version of the Minion with significantly increased stats and effects. These triples will retain any buffs placed on them before they were combined.</p>
+    <p>Once you’ve scored a triple recruit and place your combined Minion on the board, you’ll also be granted a reward card in your hand that allows you to discover a free Minion from the next highest Tavern Level!</p>
+
+    <img src="Images/OrderMinions.webp" alt="Order">
+    <h4>Arrange your Minions:</h4>
+    <p>After you’ve got a crew of recruits ready to join you in battle, you’ll want to choose how best to arrange Minion positions on the board. In between combat phases, you can place recruited Minions from your hand onto the board or switch their positions by simply dragging the card into the desired place. During combat, Minions on the left will attack first, but which enemy is attacked will be completely random unless your opponent has a Taunt Minion in place (which will always be attacked first). Pay attention to your Minion’s board positions to make the most of effects like Poisonous, Deathrattle, and Divine Shield.</p>
+
+    <h3>Enter the Fray</h3>
+    <p>Once your time in the Tavern is over, combat will begin! During the combat phase, you will be pitted against a randomly chosen opponent and your recruited Minions will battle to the death until a victor is decided. Minions will take turns attacking, starting with each player’s left-most Minion. Minion keywords work just as they would in a normal game of Hearthstone. For example, Taunt Minions must be attacked first, Poisonous Minions destroy any Minion they deal damage to, Divine Shield will block the first source of damage, etc.</p>
+    <img src="Images/Combat.avif" alt="Combat">
+    <p>The status of all other players (including which opponent you will face off against next) will be visible at all times on the Leaderboard to the left of the board, but you’ll have to wait until the battle begins to see your next opponent’s Minions and positioning.
+
+      Once a round of combat concludes, you’ll head back to Bob’s to repeat the Tavern phase, have an opportunity to reconfigure your board, then head once more into the fray. You’ll repeat this pattern of beefing up your board and taking it into battle until you’re knocked out, or you reign supreme as the last standing Battlegrounds Boss!</p>
+
+    <h3>Ranking</h3>
+    <p>Ranking up and down in Battlegrounds is simple - your current skill rank is visible before heading into a match and is adjusted up or down after the match concludes, depending on your performance. The amount of points lost or gained is determined by which place you were in when you were knocked out and the skill rank of your opponents. Ending the match in the top 4 will generally increase your skill rating, while ending in the bottom 4 will lower it, though there may be cases where battling against players of significantly lower or higher skill rating could cause some variance.</p>
+    <img src="Images/Ranking.avif" alt="Ranking">
+  </main>
+
+  <!-- Custom Javascript-->
+  <script src="app.js"></script>
+</body>
+
+</html>

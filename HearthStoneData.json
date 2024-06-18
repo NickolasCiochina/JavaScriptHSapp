@@ -1,0 +1,2326 @@
+{
+  "builds": [
+    {
+      "name": "Mech build",
+      "build-image": "/Mechs.png",
+      "description": "A powerful build focusing on Mechs with Taunt and Divine Shield abilities.",
+      "minions": [
+        "Foe Reaper 4000",
+        "Deflect-o-Bot",
+        "Annoy-o-Tron",
+        "Mechanized Gift Horse",
+        "Utility Drone",
+        "Polarizing Beatboxer",
+        "Drakkari Enchanter"
+      ],
+      "extra-minions": [
+        "Untameabull",
+        "Replicating Menace",
+        "Cord Puller"
+      ]
+    },
+    {
+      "name": "Murloc build",
+      "build-image": "/Murlocs.png",
+      "description": "A scam build focusing on Murlocs with Deathrattle and Venomous abilities.",
+      "minions": [
+        "Tide Oracle Morgl",
+        "Operatic Belcher",
+        "Choral Mrrrglr",
+        "Scourfin",
+        "Bassgill",
+        "Titus Rivendare",
+        "Very Hungry Winterfinner"
+      ],
+      "extra-minions": [
+        "Diremuck Forager",
+        "Swampstriker"
+      ]
+    },
+    {
+      "name": "Beast build",
+      "build-image": "/Beasts.png",
+      "description": "A token spammer build focusing on Beasts with Deathrattles and Reborn abilities.",
+      "minions": [
+        "Monstrous Macaw",
+        "Goldrinn, the Great Wolf",
+        "Rat Pack",
+        "Mechanized Gift Horse",
+        "Trigore the Lasher",
+        "Iridescent Skyblazer",
+        "Titus Rivendare"
+      ],
+      "extra-minions": [
+        "Sprightly Scarab",
+        "Silver Goose",
+        "Spiked Savior"
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "name": "Ragnaros the Firelord",
+      "hero_image": "/Ragnaros the Firelord.png",
+      "hero_power": "DIE, INSECTS!",
+      "hero_power_image": "/Sulfuras.png",
+      "description": "Passive At the end of your turn, give your left- and right- most minions +3/+3.",
+      "recommended_types": [
+        "Pirates",
+        "Mechs",
+        "Beasts"
+      ]
+    },
+    {
+      "name": "A. F. Kay",
+      "hero_image": "/A. F. Kay.png",
+      "hero_power": "Procrastinate",
+      "hero_power_image": "/Procrastinate.png",
+      "description": "Passive Skip your first two turns, then Discover two minions from Tier 3.",
+      "recommended_types": [
+        "Pirates",
+        "Mechs",
+        "Beasts"
+      ]
+    },
+    {
+      "name": "Cookie the Cook",
+      "hero_image": "/Cookie the Cook.png",
+      "hero_power": "Stir the Pot",
+      "hero_power_image": "/Stir the Pot.png",
+      "description": "Hero Power: Throw a minion in your pot. When you've gathered 3, Discover from their types.",
+      "recommended_types": [
+        "Beasts",
+        "Mechs",
+        "Dragons"
+      ]
+    },
+    {
+      "name": "Infinite Toki",
+      "hero_image": "/Infinite Toki.png",
+      "hero_power": "Temporal Tavern",
+      "hero_power_image": "/Temporal Tavern.png",
+      "description": "Hero Power: Refresh Bob's Tavern. Add a minion from a higher Tavern Tier.",
+      "recommended_types": [
+        "Dragons",
+        "Mechs",
+        "Elementals"
+      ]
+    },
+    {
+      "name": "King Mukla",
+      "hero_image": "/King Mukla.png",
+      "hero_power": "Bananarama",
+      "hero_power_image": "/Bananarama.png",
+      "description": "Hero Power: Get two Bananas. Give everyone else one.",
+      "recommended_types": [
+        "Beasts",
+        "Murlocs",
+        "Elementals"
+      ]
+    },
+    {
+      "name": "Patches the Pirate",
+      "hero_image": "/Patches the Pirate.png",
+      "hero_power": "Pirate Parrrrty!",
+      "hero_power_image": "/Pirate Parrrrty!.png",
+      "description": "Hero Power: Get a Pirate. After you buy a Pirate, your next Hero Power costs (1) less.",
+      "recommended_types": [
+        "Pirates",
+        "Demons",
+        "Elementals"
+      ]
+    },
+    {
+      "name": "C'Thun",
+      "hero_image": "/C'Thun.png",
+      "hero_power": "Saturday C'Thuns!",
+      "hero_power_image": "/Saturday C'Thuns!.png",
+      "description": "Hero Power: At end of turn, give a friendly minion +1/+1. Repeat 1 more time (upgrades each turn!).",
+      "recommended_types": [
+        "Demons",
+        "Beasts",
+        "Mechs"
+      ]
+    },
+    {
+      "name": "Ambassador Faelin",
+      "hero_image": "/Ambassador Faelin.png",
+      "hero_power": "Expedition Plans",
+      "hero_power_image": "/Expedition Plans.png",
+      "description": "Passive. Skip your first turn. Discover a Tier 2, 4, and 6 minion to get at those Tiers.",
+      "recommended_types": [
+        "Murlocs",
+        "Naga",
+        "Pirates"
+      ]
+    }
+  ],
+  "minions": [
+    {
+      "name": "Annoy-o-Tron",
+      "tier": 1,
+      "type": [
+        "Mech"
+      ],
+      "keywords": [
+        "Taunt",
+        "Divine Shield"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 1,
+          "health": 2,
+          "description": "Taunt, Divine Shield",
+          "image": "/Annoy-o-Tron.png"
+        },
+        "golden": {
+          "attack": 2,
+          "health": 4,
+          "description": "Taunt, Divine Shield",
+          "image": "/Annoy-o-Tron.png"
+        }
+      }
+    },
+    {
+      "name": "Backstage Security",
+      "tier": 1,
+      "type": [
+        "Demon"
+      ],
+      "keywords": [
+        "Battlecry - Does something when you play it from your hand."
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 5,
+          "description": "Battlecry: Deal 1 damage to your hero.",
+          "image": "/Backstage Security.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 10,
+          "description": "Battlecry: Deal 1 damage to your hero twice.",
+          "image": "/Backstage Security.png"
+        }
+      }
+    },
+    {
+      "name": "Blazing Skyfin",
+      "tier": 2,
+      "type": [
+        "Murloc",
+        "Dragon"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 4,
+          "description": "After you trigger a Battlecry, gain +1/+1.",
+          "image": "/Blazing Skyfin.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 8,
+          "description": "After you trigger a Battlecry, gain +2/+2.",
+          "image": "/Blazing Skyfin.png"
+        }
+      }
+    },
+    {
+      "name": "Coldlight Seer",
+      "tier": 2,
+      "type": [
+        "Murloc"
+      ],
+      "keywords": [
+        "Battlecry"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 6,
+          "description": "Battlecry: Give your other Murlocs +4 Health.",
+          "image": "/Coldlight Seer.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 12,
+          "description": "Battlecry: Give your other Murlocs +8 Health.",
+          "image": "/Coldlight Seer.png"
+        }
+      }
+    },
+    {
+      "name": "Cord Puller",
+      "tier": 1,
+      "type": [
+        "Mech"
+      ],
+      "keywords": [
+        "Divine Shield",
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 2,
+          "description": "Divine Shield. Deathrattle: Summon a 2/2 Microbot.",
+          "image": "/Cord Puller.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 4,
+          "description": "Divine Shield. Deathrattle: Summon two 2/2 Microbots.",
+          "image": "/Cord Puller.png"
+        }
+      }
+    },
+    {
+      "name": "Crackling Cyclone",
+      "tier": 2,
+      "type": [
+        "Elemental"
+      ],
+      "keywords": [
+        "Divine Shield",
+        "Windfury"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 8,
+          "health": 2,
+          "description": "Divine Shield, Windfury",
+          "image": "/Crackling Cyclone.png"
+        },
+        "golden": {
+          "attack": 16,
+          "health": 4,
+          "description": "Divine Shield, Windfury",
+          "image": "/Crackling Cyclone.png"
+        }
+      }
+    },
+    {
+      "name": "Deck Swabbie",
+      "tier": 1,
+      "type": [
+        "Pirate"
+      ],
+      "keywords": [
+        "Battlecry"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 4,
+          "description": "Battlecry: Reduce the Cost of upgrading the Tavern by (2).",
+          "image": "/Deck Swabbie.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 8,
+          "description": "Battlecry: Reduce the Cost of upgrading the Tavern by (4).",
+          "image": "/Deck Swabbie.png"
+        }
+      }
+    },
+    {
+      "name": "Deep-Sea Angler",
+      "tier": 1,
+      "type": [
+        "Naga"
+      ],
+      "keywords": [
+        "Spellcraft"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 4,
+          "description": "Spellcraft: Give a minion +4 Health and Taunt until next turn.",
+          "image": "/Deep-Sea Angler.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 8,
+          "description": "Spellcraft: Give a minion +8 Health and Taunt until next turn.",
+          "image": "/Deep-Sea Angler.png"
+        }
+      }
+    },
+    {
+      "name": "Defiant Shipwright",
+      "tier": 2,
+      "type": [
+        "Pirate"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 10,
+          "description": "Whenever this gains Attack, gain +2 Health permanently.",
+          "image": "/Defiant Shipwright.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 20,
+          "description": "Whenever this gains Attack, gain +4 Health permanently.",
+          "image": "/Defiant Shipwright.png"
+        }
+      }
+    },
+    {
+      "name": "Eternal Knight",
+      "tier": 2,
+      "type": [
+        "Undead"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 8,
+          "health": 2,
+          "description": "Has +2/+2 for each friendly Eternal Knight that died this game (wherever this is).",
+          "image": "/Eternal Knight.png"
+        },
+        "golden": {
+          "attack": 16,
+          "health": 4,
+          "description": "Has +4/+4 for each friendly Eternal Knight that died this game (wherever this is).",
+          "image": "/Eternal Knight.png"
+        }
+      }
+    },
+    {
+      "name": "Fire Dancer",
+      "tier": 2,
+      "type": [
+        "General"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 6,
+          "health": 3,
+          "description": "Deathrattle: Deal 1 damage to all minions twice.",
+          "image": "/Fire Dancer.png"
+        },
+        "golden": {
+          "attack": 12,
+          "health": 6,
+          "description": "Deathrattle: Deal 1 damage to all minions twice.",
+          "image": "/Fire Dancer.png"
+        }
+      }
+    },
+    {
+      "name": "Freedealing Gambler",
+      "tier": 2,
+      "type": [
+        "Pirate"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 3,
+          "description": "This minion sells for 3 Gold.",
+          "image": "/Freedealing Gambler.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 6,
+          "description": "This minion sells for 6 Gold.",
+          "image": "/Freedealing Gambler.png"
+        }
+      }
+    },
+    {
+      "name": "Glim Guardian",
+      "tier": 1,
+      "type": [
+        "Dragon"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 6,
+          "description": "Whenever this attacks, gain +4/+2.",
+          "image": "/Glim Guardian.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 12,
+          "description": "Whenever this attacks, gain +8/+4.",
+          "image": "/Glim Guardian.png"
+        }
+      }
+    },
+    {
+      "name": "Harmless Bonehead",
+      "tier": 1,
+      "type": [
+        "Undead"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 2,
+          "description": "Deathrattle: Summon two 2/2 Skeletons.",
+          "image": "/Harmless Bonehead.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 4,
+          "description": "Deathrattle: Summon two 4/4 Skeletons.",
+          "image": "/Harmless Bonehead.png"
+        }
+      }
+    },
+    {
+      "name": "Humming Bird",
+      "tier": 2,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 8,
+          "description": "Your other Beasts have +4 Attack.",
+          "image": "/Humming Bird.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 16,
+          "description": "Your other Beasts have +8 Attack.",
+          "image": "/Humming Bird.png"
+        }
+      }
+    },
+    {
+      "name": "Impulsive Trickster",
+      "tier": 2,
+      "type": [
+        "Demon"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 3,
+          "description": "Deathrattle: Give this minion's maximum Health to another friendly minion.",
+          "image": "/Impulsive Trickster.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 6,
+          "description": "Deathrattle: Give this minion's maximum Health to another friendly minion, twice.",
+          "image": "/Impulsive Trickster.png"
+        }
+      }
+    },
+    {
+      "name": "Irate Rooster",
+      "tier": 2,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [
+        "Start of Combat"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 6,
+          "health": 8,
+          "description": "Start of Combat: Deal 1 damage to adjacent minions and give them +4 Attack.",
+          "image": "/Irate Rooster.png"
+        },
+        "golden": {
+          "attack": 12,
+          "health": 16,
+          "description": "Start of Combat: Deal 1 damage to adjacent minions and give them +8 Attack.",
+          "image": "/Irate Rooster.png"
+        }
+      }
+    },
+    {
+      "name": "Lava Lurker",
+      "tier": 2,
+      "type": [
+        "Naga"
+      ],
+      "keywords": [
+        "Spellcraft"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 10,
+          "description": "The first two Spellcraft enchantments on this each turn are permanent.",
+          "image": "/Lava Lurker.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 20,
+          "description": "The first two Spellcraft enchantments on this each turn are permanent.",
+          "image": "/Lava Lurker.png"
+        }
+      }
+    },
+    {
+      "name": "Lullabot",
+      "tier": 2,
+      "type": [
+        "Mech"
+      ],
+      "keywords": [
+        "Magnetic"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 4,
+          "description": "Magnetic. At the end of your turn, gain +2/+2.",
+          "image": "/Lullabot.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 8,
+          "description": "Magnetic. At the end of your turn, gain +4/+4.",
+          "image": "/Lullabot.png"
+        }
+      }
+    },
+    {
+      "name": "Manasaber",
+      "tier": 1,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 4,
+          "description": "Deathrattle: Summon two 0/2 Cublings with Taunt.",
+          "image": "/Manasaber.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 8,
+          "description": "Deathrattle: Summon two 0/2 Cublings with Taunt.",
+          "image": "/Manasaber.png"
+        }
+      }
+    },
+    {
+      "name": "Accord-o-Tron",
+      "tier": 3,
+      "type": [
+        "Mech"
+      ],
+      "keywords": [
+        "Magnetic"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 3,
+          "description": "Magnetic. At the start of your turn, gain 1 extra Gold.",
+          "image": "/Accord-o-Tron.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 6,
+          "description": "Magnetic. At the start of your turn, gain 2 extra Gold.",
+          "image": "/Accord-o-Tron.png"
+        }
+      }
+    },
+    {
+      "name": "Admiral Eliza Goreblade",
+      "tier": 6,
+      "type": [
+        "Pirate"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 6,
+          "health": 7,
+          "description": "Whenever a friendly Pirate attacks, give all friendly minions +3/+1.",
+          "image": "/Admiral Eliza Goreblade.png"
+        },
+        "golden": {
+          "attack": 12,
+          "health": 14,
+          "description": "Whenever a friendly Pirate attacks, give all friendly minions +6/+2.",
+          "image": "/Admiral Eliza Goreblade.png"
+        }
+      }
+    },
+    {
+      "name": "Amber Guardian",
+      "tier": 5,
+      "type": [
+        "Dragon"
+      ],
+      "keywords": [
+        "Start of Combat"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 7,
+          "health": 7,
+          "description": "Start of Combat: Give another friendly Dragon +7/+7 and Divine Shield.",
+          "image": "/Amber Guardian.png"
+        },
+        "golden": {
+          "attack": 14,
+          "health": 14,
+          "description": "Start of Combat: Give two other friendly Dragons +7/+7 and Divine Shield.",
+          "image": "/Amber Guardian.png"
+        }
+      }
+    },
+    {
+      "name": "Annoy-o-Module",
+      "tier": 4,
+      "type": [
+        "Mech"
+      ],
+      "keywords": [
+        "Magnetic",
+        "Divine Shield",
+        "Taunt"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 4,
+          "description": "Magnetic. Divine Shield. Taunt.",
+          "image": "/Annoy-o-Module.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 8,
+          "description": "Magnetic. Divine Shield. Taunt.",
+          "image": "/Annoy-o-Module.png"
+        }
+      }
+    },
+    {
+      "name": "Anub'arak, Nerubian King",
+      "tier": 4,
+      "type": [
+        "Undead"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 3,
+          "description": "Deathrattle: Your Undead have +1 Attack this game (wherever they are).",
+          "image": "/Anub'arak, Nerubian King.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 6,
+          "description": "Deathrattle: Your Undead have +2 Attack this game (wherever they are).",
+          "image": "/Anub'arak, Nerubian King.png"
+        }
+      }
+    },
+    {
+      "name": "Archlich Kel'Thuzad",
+      "tier": 6,
+      "type": [
+        "Undead"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 10,
+          "health": 8,
+          "description": "At the end of your turn, destroy the Undead to the left of this and resummon an exact copy.",
+          "image": "/Archlich Kel'Thuzad.png"
+        },
+        "golden": {
+          "attack": 20,
+          "health": 16,
+          "description": "At the end of your turn, destroy the Undead to the left of this and resummon an exact copy.",
+          "image": "/Archlich Kel'Thuzad.png"
+        }
+      }
+    },
+    {
+      "name": "Assistant Guard",
+      "tier": 4,
+      "type": [
+        "General"
+      ],
+      "keywords": [
+        "Battlecry"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 3,
+          "description": "Battlecry: Give a minion Taunt. Then give your Taunt minions +2/+3.",
+          "image": "/Assistant Guard.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 6,
+          "description": "Battlecry: Give a minion Taunt. Then give your Taunt minions +4/+6.",
+          "image": "/Assistant Guard.png"
+        }
+      }
+    },
+    {
+      "name": "Augmented Laborer",
+      "tier": 5,
+      "type": [
+        "Mech",
+        "Demon"
+      ],
+      "keywords": [
+        "Avenge"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 8,
+          "description": "Avenge (4): Get a random Mecha-Demon.",
+          "image": "/Augmented Laborer.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 16,
+          "description": "Avenge (4): Get 2 random Mecha-Demons.",
+          "image": "/Augmented Laborer.png"
+        }
+      }
+    },
+    {
+      "name": "Bannerboar",
+      "tier": 4,
+      "type": [
+        "Quilboar"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 5,
+          "description": "At the end of your turn, play a Blood Gem on adjacent minions.",
+          "image": "/Bannerboar.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 10,
+          "description": "At the end of your turn, play 2 Blood Gems on adjacent minions.",
+          "image": "/Bannerboar.png"
+        }
+      }
+    },
+    {
+      "name": "Bassgill",
+      "tier": 4,
+      "type": [
+        "Murloc"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 7,
+          "health": 2,
+          "description": "Deathrattle: Summon the highest Health Murloc from your hand for this combat only.",
+          "image": "/Bassgill.png"
+        },
+        "golden": {
+          "attack": 14,
+          "health": 4,
+          "description": "Deathrattle: Summon the 2 highest Health Murlocs from your hand for this combat only.",
+          "image": "/Bassgill.png"
+        }
+      }
+    },
+    {
+      "name": "Bazaar Dealer",
+      "tier": 4,
+      "type": [
+        "Demon"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 4,
+          "description": "1 Tavern spell each turn costs Health instead of Gold to buy. (1 left!)",
+          "image": "/Bazaar Dealer.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 8,
+          "description": "2 Tavern spells each turn cost Health instead of Gold to buy. (2 left!)",
+          "image": "/Bazaar Dealer.png"
+        }
+      }
+    },
+    {
+      "name": "Blade Collector",
+      "tier": 4,
+      "type": [
+        "Pirate"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 2,
+          "description": "Also damages the minions next to whomever this attacks.",
+          "image": "/Blade Collector.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 4,
+          "description": "Also damages the minions next to whomever this attacks.",
+          "image": "/Blade Collector.png"
+        }
+      }
+    },
+    {
+      "name": "Bongo Bopper",
+      "tier": 5,
+      "type": [
+        "Quilboar"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 3,
+          "description": "At the end of your turn, get 2 Blood Gems and play 2 more on this.",
+          "image": "/Bongo Bopper.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 6,
+          "description": "At the end of your turn, get 4 Blood Gems and play 4 more on this.",
+          "image": "/Bongo Bopper.png"
+        }
+      }
+    },
+    {
+      "name": "Brann Bronzebeard",
+      "tier": 5,
+      "type": [
+        "General"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 4,
+          "description": "Your Battlecries trigger twice.",
+          "image": "/Brann Bronzebeard.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 8,
+          "description": "Your Battlecries trigger three times.",
+          "image": "/Brann Bronzebeard.png"
+        }
+      }
+    },
+    {
+      "name": "Bream Counter",
+      "tier": 4,
+      "type": [
+        "Murloc"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 4,
+          "description": "While this is in your hand, after you play a Murloc, gain +3/+3.",
+          "image": "/Bream Counter.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 8,
+          "description": "While this is in your hand, after you play a Murloc, gain +6/+6.",
+          "image": "/Bream Counter.png"
+        }
+      }
+    },
+    {
+      "name": "Bristlebach",
+      "tier": 6,
+      "type": [
+        "Quilboar"
+      ],
+      "keywords": [
+        "Avenge"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 10,
+          "description": "Avenge (2): Play 2 Blood Gems on all your Quilboar.",
+          "image": "/Bristlebach.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 20,
+          "description": "Avenge (2): Play 4 Blood Gems on all your Quilboar.",
+          "image": "/Bristlebach.png"
+        }
+      }
+    },
+    {
+      "name": "Bristling Buffoon",
+      "tier": 3,
+      "type": [
+        "Quilboar"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 4,
+          "description": "Whenever this takes damage, get a Blood Gem. (3 times per combat.)",
+          "image": "/Bristling Buffoon.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 8,
+          "description": "Whenever this takes damage, get two Blood Gems. (3 times per combat.)",
+          "image": "/Bristling Buffoon.png"
+        }
+      }
+    },
+    {
+      "name": "Captain Sanders",
+      "tier": 7,
+      "type": [
+        "Pirate"
+      ],
+      "keywords": [
+        "Battlecry"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 7,
+          "health": 7,
+          "description": "Battlecry: Make a friendly minion Golden.",
+          "image": "/Captain Sanders.png"
+        },
+        "golden": {
+          "attack": 14,
+          "health": 14,
+          "description": "Battlecry: Make a friendly minion Golden.",
+          "image": "/Captain Sanders.png"
+        }
+      }
+    },
+    {
+      "name": "Champion of the Primus",
+      "tier": 5,
+      "type": [
+        "Undead"
+      ],
+      "keywords": [
+        "Avenge"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 9,
+          "description": "Avenge (3): Your Undead have +1 Attack this game (wherever they are).",
+          "image": "/Champion of the Primus.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 18,
+          "description": "Avenge (3): Your Undead have +2 Attack this game (wherever they are).",
+          "image": "/Champion of the Primus.png"
+        }
+      }
+    },
+    {
+      "name": "Charlga",
+      "tier": 6,
+      "type": [
+        "Quilboar"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 4,
+          "description": "At the end of your turn, play a Blood Gem on your other minions.",
+          "image": "/Charlga.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 8,
+          "description": "At the end of your turn, play 2 Blood Gems on your other minions.",
+          "image": "/Charlga.png"
+        }
+      }
+    },
+    {
+      "name": "Champion of Sargeras",
+      "tier": 7,
+      "type": [
+        "Demon"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 10,
+          "health": 10,
+          "description": "Minions in the Tavern have +10/+10.",
+          "image": "/Champion of Sargeras.png"
+        },
+        "golden": {
+          "attack": 20,
+          "health": 20,
+          "description": "Minions in the Tavern have +20/+20.",
+          "image": "/Champion of Sargeras.png"
+        }
+      }
+    },
+    {
+      "name": "Charging Czarina",
+      "tier": 5,
+      "type": [
+        "Mech"
+      ],
+      "keywords": [
+        "Divine Shield"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 5,
+          "health": 3,
+          "description": "Divine Shield. Whenever you cast a Tavern spell, give your minions with Divine Shield +2 Attack.",
+          "image": "/Charging Czarina.png"
+        },
+        "golden": {
+          "attack": 10,
+          "health": 6,
+          "description": "Divine Shield. Whenever you cast a Tavern spell, give your minions with Divine Shield +4 Attack.",
+          "image": "/Charging Czarina.png"
+        }
+      }
+    },
+    {
+      "name": "Corrupted Myrmidon",
+      "tier": 5,
+      "type": [
+        "Naga"
+      ],
+      "keywords": [
+        "Start of Combat"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 3,
+          "description": "Start of Combat: Double this minion's stats.",
+          "image": "/Corrupted Myrmidon.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 6,
+          "description": "Start of Combat: Triple this minion's stats.",
+          "image": "/Corrupted Myrmidon.png"
+        }
+      }
+    },
+    {
+      "name": "Crafty Aranasi",
+      "tier": 4,
+      "type": [
+        "Demon"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 10,
+          "description": "Whenever this takes damage, deal 5 damage to a random enemy minion.",
+          "image": "/Crafty Aranasi.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 20,
+          "description": "Whenever this takes damage, deal 5 damage to a random enemy minion, twice.",
+          "image": "/Crafty Aranasi.png"
+        }
+      }
+    },
+    {
+      "name": "Cultist S'Thara",
+      "tier": 6,
+      "type": [
+        "Demon"
+      ],
+      "keywords": [
+        "Stealth",
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 11,
+          "health": 3,
+          "description": "Stealth. Deathrattle: Summon your first Demon that died this combat. It keeps enchantments.",
+          "image": "/Cultist S'Thara.png"
+        },
+        "golden": {
+          "attack": 22,
+          "health": 6,
+          "description": "Stealth. Deathrattle: Summon your first 2 Demons that died this combat. They keep enchantments.",
+          "image": "/Cultist S'Thara.png"
+        }
+      }
+    },
+    {
+      "name": "Daggerspine Thrasher",
+      "tier": 5,
+      "type": [
+        "Naga"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 8,
+          "description": "Whenever you cast a spell, gain Divine Shield, Windfury, or Venomous until next turn.",
+          "image": "/Daggerspine Thrasher.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 16,
+          "description": "Whenever you cast a spell, gain Divine Shield, Windfury, or Venomous until next turn.",
+          "image": "/Daggerspine Thrasher.png"
+        }
+      }
+    },
+    {
+      "name": "Deadstomper",
+      "tier": 6,
+      "type": [
+        "Undead",
+        "Beast"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 11,
+          "description": "After you summon a minion in combat, give your minions +3 Attack.",
+          "image": "/Deadstomper.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 22,
+          "description": "After you summon a minion in combat, give your minions +6 Attack.",
+          "image": "/Deadstomper.png"
+        }
+      }
+    },
+    {
+      "name": "Deep Blue Crooner",
+      "tier": 3,
+      "type": [
+        "Naga"
+      ],
+      "keywords": [
+        "Spellcraft"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 2,
+          "description": "Spellcraft: Give a minion +1/+1 until next turn. Improve your future Deep Blues.",
+          "image": "/Deep Blue Crooner.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 4,
+          "description": "Spellcraft: Give a minion +2/+2 until next turn. Improve your future Deep Blues.",
+          "image": "/Deep Blue Crooner.png"
+        }
+      }
+    },
+    {
+      "name": "Deflect-o-Bot",
+      "tier": 3,
+      "type": [
+        "Mech"
+      ],
+      "keywords": [
+        "Divine Shield"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 2,
+          "description": "Divine Shield. Whenever you summon a Mech during combat, gain +2 Attack and Divine Shield.",
+          "image": "/Deflect-o-Bot.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 4,
+          "description": "Divine Shield. Whenever you summon a Mech during combat, gain +4 Attack and Divine Shield.",
+          "image": "/Deflect-o-Bot.png"
+        }
+      }
+    },
+    {
+      "name": "Diremuck Forager",
+      "tier": 3,
+      "type": [
+        "Murloc"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 4,
+          "description": "Start of Combat: Give a minion in your hand +2/+2, then summon it for this combat only.",
+          "image": "/Diremuck Forager.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 8,
+          "description": "Start of Combat: Give a minion in your hand +4/+4, then summon it for this combat only.",
+          "image": "/Diremuck Forager.png"
+        }
+      }
+    },
+    {
+      "name": "Disguised Graverobber",
+      "tier": 3,
+      "type": [
+        "Undead"
+      ],
+      "keywords": [
+        "Battlecry"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 4,
+          "description": "Battlecry: Destroy a friendly Undead to get a plain copy of it.",
+          "image": "/Disguised Graverobber.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 8,
+          "description": "Battlecry: Destroy a friendly Undead to get 2 plain copies of it.",
+          "image": "/Disguised Graverobber.png"
+        }
+      }
+    },
+    {
+      "name": "Draconic Deathscale",
+      "tier": 5,
+      "type": [
+        "Naga",
+        "Dragon"
+      ],
+      "keywords": [
+        "Spellcraft"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 8,
+          "health": 3,
+          "description": "Spellcraft: Trigger a friendly minion's Battlecry.",
+          "image": "/Draconic Deathscale.png"
+        },
+        "golden": {
+          "attack": 16,
+          "health": 6,
+          "description": "Spellcraft: Trigger a friendly minion's Battlecry twice.",
+          "image": "/Draconic Deathscale.png"
+        }
+      }
+    },
+    {
+      "name": "Drakkari Enchanter",
+      "tier": 5,
+      "type": [
+        "General"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 1,
+          "health": 5,
+          "description": "Your end of turn effects trigger twice.",
+          "image": "/Drakkari Enchanter.png"
+        },
+        "golden": {
+          "attack": 2,
+          "health": 10,
+          "description": "Your end of turn effects trigger three times.",
+          "image": "/Drakkari Enchanter.png"
+        }
+      }
+    },
+    {
+      "name": "Electric Synthesizer",
+      "tier": 3,
+      "type": [
+        "Dragon"
+      ],
+      "keywords": [
+        "Battlecry"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 3,
+          "description": "Battlecry: Give your other Dragons +3/+1.",
+          "image": "/Electric Synthesizer.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 6,
+          "description": "Battlecry: Give your other Dragons +6/+2.",
+          "image": "/Electric Synthesizer.png"
+        }
+      }
+    },
+    {
+      "name": "Elemental of Surprise",
+      "tier": 6,
+      "type": [
+        "Elemental"
+      ],
+      "keywords": [
+        "Divine Shield"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 8,
+          "health": 8,
+          "description": "Divine Shield. This minion can triple with any Elemental.",
+          "image": "/Elemental of Surprise.png"
+        },
+        "golden": {
+          "attack": 16,
+          "health": 16,
+          "description": "Divine Shield. This minion can triple with any Elemental.",
+          "image": "/Elemental of Surprise.png"
+        }
+      }
+    },
+    {
+      "name": "Ensorcelled Fungus",
+      "tier": 5,
+      "type": [
+        "Naga"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 4,
+          "description": "Has +2/+2 for each Tavern spell you've cast this game (wherever this is).",
+          "image": "/Ensorcelled Fungus.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 8,
+          "description": "Has +4/+4 for each Tavern spell you've cast this game (wherever this is).",
+          "image": "/Ensorcelled Fungus.png"
+        }
+      }
+    },
+    {
+      "name": "Eternal Summoner",
+      "tier": 6,
+      "type": [
+        "Undead"
+      ],
+      "keywords": [
+        "Reborn",
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 8,
+          "health": 1,
+          "description": "Reborn. Deathrattle: Summon 1 Eternal Knight.",
+          "image": "/Eternal Summoner.png"
+        },
+        "golden": {
+          "attack": 16,
+          "health": 2,
+          "description": "Reborn. Deathrattle: Summon a Golden Eternal Knight.",
+          "image": "/Eternal Summoner.png"
+        }
+      }
+    },
+    {
+      "name": "Faceless Disciple",
+      "tier": 3,
+      "type": [
+        "General"
+      ],
+      "keywords": [
+        "Battlecry"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 6,
+          "health": 4,
+          "description": "Battlecry: Transform a minion into one from a Tier higher.",
+          "image": "/Faceless Disciple.png"
+        },
+        "golden": {
+          "attack": 12,
+          "health": 8,
+          "description": "Battlecry: Transform a minion into one from 2 Tiers higher.",
+          "image": "/Faceless Disciple.png"
+        }
+      }
+    },
+    {
+      "name": "False Implicator",
+      "tier": 3,
+      "type": [
+        "Demon"
+      ],
+      "keywords": [
+        "End of Turn"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 1,
+          "health": 1,
+          "description": "At the end of your turn, consume a minion in the Tavern to gain its stats.",
+          "image": "/False Implicator.png"
+        },
+        "golden": {
+          "attack": 2,
+          "health": 2,
+          "description": "At the end of your turn, consume a minion in the Tavern to gain double its stats.",
+          "image": "/False Implicator.png"
+        }
+      }
+    },
+    {
+      "name": "Famished Felbat",
+      "tier": 6,
+      "type": [
+        "Demon"
+      ],
+      "keywords": [
+        "End of Turn"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 8,
+          "health": 5,
+          "description": "At the end of your turn, your Demons consume a minion in the Tavern to gain its stats.",
+          "image": "/Famished Felbat.png"
+        },
+        "golden": {
+          "attack": 16,
+          "health": 10,
+          "description": "At the end of your turn, your Demons consume a minion in the Tavern to gain double its stats.",
+          "image": "/Famished Felbat.png"
+        }
+      }
+    },
+    {
+      "name": "Felboar",
+      "tier": 5,
+      "type": [
+        "Demon",
+        "Quilboar"
+      ],
+      "keywords": [
+        "Spellcast"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 6,
+          "description": "After you cast 2 spells, consume a minion in the Tavern to gain its stats. (2 left!)",
+          "image": "/Felboar.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 12,
+          "description": "After you cast 2 spells, consume a minion in the Tavern to gain double its stats. (2 left!)",
+          "image": "/Felboar.png"
+        }
+      }
+    },
+    {
+      "name": "Fiery Felblood",
+      "tier": 3,
+      "type": [
+        "Elemental",
+        "Demon"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 1,
+          "description": "Deathrattle: Minions in the Tavern have +2 Attack this game.",
+          "image": "/Fiery Felblood.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 2,
+          "description": "Deathrattle: Minions in the Tavern have +4 Attack this game.",
+          "image": "/Fiery Felblood.png"
+        }
+      }
+    },
+    {
+      "name": "Fleet Admiral Tethys",
+      "tier": 6,
+      "type": [
+        "Pirate"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 5,
+          "health": 6,
+          "description": "After you spend 9 Gold, get a random Pirate. (9 Gold left!)",
+          "image": "/Fleet Admiral Tethys.png"
+        },
+        "golden": {
+          "attack": 10,
+          "health": 12,
+          "description": "After you spend 9 Gold, get 2 random Pirates. (9 Gold left!)",
+          "image": "/Fleet Admiral Tethys.png"
+        }
+      }
+    },
+    {
+      "name": "Floating Watcher",
+      "tier": 4,
+      "type": [
+        "Demon"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 4,
+          "description": "Whenever your hero takes damage on your turn, gain +2/+2.",
+          "image": "/Floating Watcher.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 8,
+          "description": "Whenever your hero takes damage on your turn, gain +4/+4.",
+          "image": "/Floating Watcher.png"
+        }
+      }
+    },
+    {
+      "name": "Flourishing Frostling",
+      "tier": 5,
+      "type": [
+        "Elemental"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 1,
+          "description": "Has +2/+1 for each Elemental you played this game (wherever this is).",
+          "image": "/Flourishing Frostling.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 2,
+          "description": "Has +4/+2 for each Elemental you played this game (wherever this is).",
+          "image": "/Flourishing Frostling.png"
+        }
+      }
+    },
+    {
+      "name": "Foe Reaper 4000",
+      "tier": 6,
+      "type": [
+        "Mech"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 6,
+          "health": 9,
+          "description": "Also damages the minions next to whomever it attacks.",
+          "image": "/Foe Reaper 4000.png"
+        },
+        "golden": {
+          "attack": 12,
+          "health": 18,
+          "description": "Also damages the minions next to whomever it attacks.",
+          "image": "/Foe Reaper 4000.png"
+        }
+      }
+    },
+    {
+      "name": "Gem Smuggler",
+      "tier": 4,
+      "type": [
+        "Quilboar"
+      ],
+      "keywords": [
+        "Battlecry"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 4,
+          "description": "Battlecry: Play a Blood Gem on all your other minions.",
+          "image": "/Gem Smuggler.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 8,
+          "description": "Battlecry: Play 2 Blood Gems on all your other minions.",
+          "image": "/Gem Smuggler.png"
+        }
+      }
+    },
+    {
+      "name": "General Drakkisath",
+      "tier": 5,
+      "type": [
+        "Dragon"
+      ],
+      "keywords": [
+        "Battlecry"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 8,
+          "description": "Battlecry: Get a 2/1 Smolderwing with 'Battlecry: Give a Dragon +5 Attack.'",
+          "image": "/General Drakkisath.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 16,
+          "description": "Battlecry: Get two 2/1 Smolderwings with 'Battlecry: Give a Dragon +5 Attack.'",
+          "image": "/General Drakkisath.png"
+        }
+      }
+    },
+    {
+      "name": "Geomagus Roogug",
+      "tier": 4,
+      "type": [
+        "Quilboar"
+      ],
+      "keywords": [
+        "Divine Shield"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 6,
+          "description": "Divine Shield. Whenever a Blood Gem is played on this, play a Blood Gem on a different friendly minion.",
+          "image": "/Geomagus Roogug.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 12,
+          "description": "Divine Shield. Whenever a Blood Gem is played on this, play 2 Blood Gems on a different friendly minion.",
+          "image": "/Geomagus Roogug.png"
+        }
+      }
+    },
+    {
+      "name": "Ghastcoiler",
+      "tier": 6,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 7,
+          "health": 7,
+          "description": "Deathrattle: Summon 2 random Deathrattle minions.",
+          "image": "/Ghastcoiler.png"
+        },
+        "golden": {
+          "attack": 14,
+          "health": 14,
+          "description": "Deathrattle: Summon 4 random Deathrattle minions.",
+          "image": "/Ghastcoiler.png"
+        }
+      }
+    },
+    {
+      "name": "Glowscale",
+      "tier": 5,
+      "type": [
+        "Naga"
+      ],
+      "keywords": [
+        "Taunt",
+        "Spellcraft"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 6,
+          "description": "Taunt. Spellcraft: Give a minion Divine Shield until next turn.",
+          "image": "/Glowscale.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 12,
+          "description": "Taunt. Spellcraft: Give a minion Divine Shield until next turn.",
+          "image": "/Glowscale.png"
+        }
+      }
+    },
+    {
+      "name": "Mechanized Gift Horse",
+      "tier": 4,
+      "type": [
+        "Mech",
+        "Beast"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 4,
+          "description": "Deathrattle: Summon two 1/1 Microbots.",
+          "image": "/Mechanized Gift Horse.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 8,
+          "description": "Deathrattle: Summon two 2/2 Microbots.",
+          "image": "/Mechanized Gift Horse.png"
+        }
+      }
+    },
+    {
+      "name": "Utility Drone",
+      "tier": 4,
+      "type": [
+        "Mech"
+      ],
+      "keywords": [
+        "Magnetic"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 1,
+          "health": 3,
+          "description": "Battlecry: Give a friendly Mech +2/+2.",
+          "image": "/Utility Drone.png"
+        },
+        "golden": {
+          "attack": 2,
+          "health": 6,
+          "description": "Battlecry: Give a friendly Mech +4/+4.",
+          "image": "/Utility Drone.png"
+        }
+      }
+    },
+    {
+      "name": "Polarizing Beatboxer",
+      "tier": 6,
+      "type": [
+        "Mech"
+      ],
+      "keywords": [
+        "Magnetic"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 5,
+          "description": "Magnetic. At the end of your turn, give another friendly Mech +2 Attack.",
+          "image": "/Polarizing Beatboxer.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 10,
+          "description": "Magnetic. At the end of your turn, give another friendly Mech +4 Attack.",
+          "image": "/Polarizing Beatboxer.png"
+        }
+      }
+    },
+    {
+      "name": "Untameabull",
+      "tier": 6,
+      "type": [
+        "Beast",
+        "Mech"
+      ],
+      "keywords": [
+        "Divine Shield"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 6,
+          "description": "Taunt. After this minion attacks, gain +2/+2.",
+          "image": "/Untameabull.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 12,
+          "description": "Taunt. After this minion attacks, gain +4/+4.",
+          "image": "/Untameabull.png"
+        }
+      }
+    },
+    {
+      "name": "Tide Oracle Morgl",
+      "tier": 7,
+      "type": [
+        "Murloc"
+      ],
+      "keywords": [
+        "Poisonous"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 4,
+          "description": "Battlecry: Discover a Murloc.",
+          "image": "/Tide Oracle Morgl.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 8,
+          "description": "Battlecry: Discover two Murlocs.",
+          "image": "/Tide Oracle Morgl.png"
+        }
+      }
+    },
+    {
+      "name": "Operatic Belcher",
+      "tier": 5,
+      "type": [
+        "Murloc"
+      ],
+      "keywords": [
+        "Venomous",
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 3,
+          "description": "Battlecry: Give your other Murlocs +3 Attack.",
+          "image": "/Operatic Belcher.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 6,
+          "description": "Battlecry: Give your other Murlocs +6 Attack.",
+          "image": "/Operatic Belcher.png"
+        }
+      }
+    },
+    {
+      "name": "Choral Mrrrglr",
+      "tier": 6,
+      "type": [
+        "Murloc"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 6,
+          "health": 6,
+          "description": "Start of Combat: Gain the stats of all the minions in your hand.",
+          "image": "/Choral Mrrrglr.png"
+        },
+        "golden": {
+          "attack": 12,
+          "health": 12,
+          "description": "Start of Combat: Gain the stats of all the minions in your hand twice.",
+          "image": "/Choral Mrrrglr.png"
+        }
+      }
+    },
+    {
+      "name": "Scourfin",
+      "tier": 3,
+      "type": [
+        "Murloc"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 3,
+          "description": "After another friendly Murloc dies, gain +1/+1.",
+          "image": "/Scourfin.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 6,
+          "description": "After another friendly Murloc dies, gain +2/+2.",
+          "image": "/Scourfin.png"
+        }
+      }
+    },
+    {
+      "name": "Bassgill",
+      "tier": 4,
+      "type": [
+        "Murloc"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 7,
+          "health": 2,
+          "description": "Deathrattle: Summon the highest Health Murloc from your hand for this combat only.",
+          "image": "/Bassgill.png"
+        },
+        "golden": {
+          "attack": 14,
+          "health": 4,
+          "description": "Deathrattle: Summon the 2 highest Health Murlocs from your hand for this combat only.",
+          "image": "/Bassgill.png"
+        }
+      }
+    },
+    {
+      "name": "Very Hungry Winterfinner",
+      "tier": 2,
+      "type": [
+        "Murloc"
+      ],
+      "keywords": [
+        "Taunt"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 6,
+          "health": 10,
+          "description": "After a friendly Murloc dies, gain +2/+2.",
+          "image": "/Very Hungry Winterfinner.png"
+        },
+        "golden": {
+          "attack": 12,
+          "health": 20,
+          "description": "After a friendly Murloc dies, gain +4/+4.",
+          "image": "/Very Hungry Winterfinner.png"
+        }
+      }
+    },
+    {
+      "name": "Swampstriker",
+      "tier": 1,
+      "type": [
+        "Murloc"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 4,
+          "description": "After you summon a Murloc, gain +2 Attack.",
+          "image": "/Swampstriker.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 8,
+          "description": "After you summon a Murloc, gain +4 Attack.",
+          "image": "/Swampstriker.png"
+        }
+      }
+    },
+    {
+      "name": "Trigore the Lasher",
+      "tier": 4,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 8,
+          "description": "Frenzy: Gain +4/+4.",
+          "image": "/Trigore the Lasher.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 16,
+          "description": "Frenzy: Gain +8/+8.",
+          "image": "/Trigore the Lasher.png"
+        }
+      }
+    },
+    {
+      "name": "Iridescent Skyblazer",
+      "tier": 5,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [],
+      "variants": {
+        "normal": {
+          "attack": 5,
+          "health": 5,
+          "description": "Divine Shield. After another friendly Beast attacks, gain +2/+2.",
+          "image": "/Iridescent Skyblazer.png"
+        },
+        "golden": {
+          "attack": 10,
+          "health": 10,
+          "description": "Divine Shield. After another friendly Beast attacks, gain +4/+4.",
+          "image": "/Iridescent Skyblazer.png"
+        }
+      }
+    },
+    {
+      "name": "Sprightly Scarab",
+      "tier": 3,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [
+        "Reborn"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 1,
+          "description": "Reborn. After this minion is Reborn, gain +1/+1.",
+          "image": "/Sprightly Scarab.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 2,
+          "description": "Reborn. After this minion is Reborn, gain +2/+2.",
+          "image": "/Sprightly Scarab.png"
+        }
+      }
+    },
+    {
+      "name": "Silver Goose",
+      "tier": 2,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [
+        "Taunt"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 5,
+          "description": "After you play a Beast, gain +1/+1.",
+          "image": "/Silver Goose.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 10,
+          "description": "After you play a Beast, gain +2/+2.",
+          "image": "/Silver Goose.png"
+        }
+      }
+    },
+    {
+      "name": "Spiked Savior",
+      "tier": 5,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [
+        "Taunt",
+        "Reborn",
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 6,
+          "description": "Taunt. After this minion survives damage, gain +2/+2.",
+          "image": "/Spiked Savior.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 12,
+          "description": "Taunt. After this minion survives damage, gain +4/+4.",
+          "image": "/Spiked Savior.png"
+        }
+      }
+    },
+    {
+      "name": "Monstrous Macaw",
+      "tier": 3,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 2,
+          "description": "After another friendly Beast dies, gain its Deathrattle effects.",
+          "image": "/Monstrous Macaw.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 4,
+          "description": "After another friendly Beast dies, gain its Deathrattle effects twice.",
+          "image": "/Monstrous Macaw.png"
+        }
+      }
+    },
+    {
+      "name": "Goldrinn, the Great Wolf",
+      "tier": 6,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 4,
+          "health": 4,
+          "description": "Deathrattle: Give all your Beasts +5/+5.",
+          "image": "/Goldrinn, the Great Wolf.png"
+        },
+        "golden": {
+          "attack": 8,
+          "health": 8,
+          "description": "Deathrattle: Give all your Beasts +10/+10.",
+          "image": "/Goldrinn, the Great Wolf.png"
+        }
+      }
+    },
+    {
+      "name": "Rat Pack",
+      "tier": 3,
+      "type": [
+        "Beast"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 2,
+          "health": 2,
+          "description": "Deathrattle: Summon a number of 1/1 Rats equal to this minion's Attack.",
+          "image": "/Rat Pack.png"
+        },
+        "golden": {
+          "attack": 4,
+          "health": 4,
+          "description": "Deathrattle: Summon a number of 2/2 Rats equal to this minion's Attack.",
+          "image": "/Rat Pack.png"
+        }
+      }
+    },
+    {
+      "name": "Replicating Menace",
+      "tier": 3,
+      "type": [
+        "Mech"
+      ],
+      "keywords": [
+        "Magnetic",
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 3,
+          "health": 1,
+          "description": "Magnetic. Deathrattle: Summon three 1/1 Microbots.",
+          "image": "/Replicating Menace.png"
+        },
+        "golden": {
+          "attack": 6,
+          "health": 2,
+          "description": "Magnetic. Deathrattle: Summon six 1/1 Microbots.",
+          "image": "/Replicating Menace.png"
+        }
+      }
+    },
+    {
+      "name": "Titus Rivendare",
+      "tier": 5,
+      "type": [
+        "General"
+      ],
+      "keywords": [
+        "Deathrattle"
+      ],
+      "variants": {
+        "normal": {
+          "attack": 1,
+          "health": 7,
+          "description": "Your minions' Deathrattles trigger an extra time.",
+          "image": "/Titus Rivendare.png"
+        },
+        "golden": {
+          "attack": 2,
+          "health": 14,
+          "description": "Your minions' Deathrattles trigger two extra times.",
+          "image": "/Titus Rivendare.png"
+        }
+      }
+    }
+  ]
+}

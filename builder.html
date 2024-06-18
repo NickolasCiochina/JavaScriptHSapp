@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HearthStone Battlegrounds - Builds</title>
+
+  <!-- Material.io files (CSS & Font/icons) -->
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.addEventListener("load", () => {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    });
+  </script>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+
+  <!-- Material.io files (JS and component registration) -->
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script>
+    const MDCBanner = mdc.banner.MDCBanner;
+    const MDCCheckbox = mdc.checkbox.MDCCheckbox;
+    const MDCChip = mdc.chips.MDCChip;
+    const MDCChipSet = mdc.chips.MDCChipSet;
+    const MDCCircularProgress = mdc.circularProgress.MDCCircularProgress;
+    const MDCDataTable = mdc.dataTable.MDCDataTable;
+    const MDCDialog = mdc.dialog.MDCDialog;
+    const MDCDrawer = mdc.drawer.MDCDrawer;
+    const MDCFloatingLabel = mdc.floatingLabel.MDCFloatingLabel;
+    const MDCFormField = mdc.formField.MDCFormField;
+    const MDCIconButtonToggle = mdc.iconButton.MDCIconButtonToggle;
+    const MDCLineRipple = mdc.lineRipple.MDCLineRipple;
+    const MDCLinearProgress = mdc.linearProgress.MDCLinearProgress;
+    const MDCList = mdc.list.MDCList;
+    const MDCMenu = mdc.menu.MDCMenu;
+    const MDCMenuSurface = mdc.menuSurface.MDCMenuSurface;
+    const MDCNotchedOutline = mdc.notchedOutline.MDCCNotchedOutline;
+    const MDCRadio = mdc.radio.MDCRadio;
+    const MDCRipple = mdc.ripple.MDCRipple;
+    const MDCSegmentedButton = mdc.segmentedButton.MDCSegmentedButton;
+    const MDCSelect = mdc.select.MDCSelect;
+    const MDCSlider = mdc.slider.MDCSlider;
+    const MDCSnackbar = mdc.snackbar.MDCSnackbar;
+    const MDCSwitch = mdc.switchControl.MDCSwitch;
+    const MDCTabBar = mdc.tabBar.MDCTabBar;
+    const MDCTextField = mdc.textField.MDCTextField;
+    const MDCTooltip = mdc.tooltip.MDCTooltip;
+    const MDCTopAppBar = mdc.topAppBar.MDCTopAppBar;
+  </script>
+</head>
+
+<body>
+  <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+        <span class="mdc-top-app-bar__title">HearthStone</span>
+        <img class="hsIcon" src="Images/HearthstoneIcon.png" alt="HearthStone Icon">
+      </section>
+    </div>
+  </header>
+
+  <aside class="mdc-drawer mdc-drawer-left mdc-drawer--modal">
+    <div class="mdc-drawer__header mdc-drawer__header-left">
+      <img class="logo-modal" src="Images/HearthstoneLogo.png" alt="Logo">
+      <h3 class="mdc-drawer__title">HearthStone Battlegrounds</h3>
+      <h6 class="mdc-drawer__subtitle">Learn like a pro, play like a pro!</h6>
+    </div>
+    <div class="mdc-drawer__content mdc-drawer__content-left">
+      <nav class="mdc-list">
+        <a class="mdc-list-item mdc-list-item-left" href="index.html" aria-current="page" tabindex="0">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+          <span class="mdc-list-item__text">Home</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item-left" href="./minions.html" aria-current="page" tabindex="0">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">style</i>
+          <span class="mdc-list-item__text">Minions</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item-left" href="./heroes.html">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">groups</i>
+          <span class="mdc-list-item__text">Heroes</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item-left mdc-list-item--activated" href="./builder.html">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">layers</i>
+          <span class="mdc-list-item__text">Builds</span>
+        </a>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="mdc-drawer-scrim"></div>
+
+  <main class="mdc-top-app-bar--fixed-adjust">
+    <h1>Builds</h1>
+    <div id="builds-container" class="card-container"></div>
+  </main>
+  
+<!-- Minion Modal -->
+<section class="sheet sheet-out-of-view" id="builder-minion-details-sheet">
+  <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <button class="material-icons mdc-top-app-bar__navigation-icon-close mdc-icon-button" aria-label="Close navigation menu">close</button>
+        <span class="mdc-top-app-bar__title">Minion Details</span>
+      </section>
+    </div>
+  </header>
+  <main class="mdc-top-app-bar--fixed-adjust minion-details-content">
+    <div class="minion-images">
+      <div class="minion-version">
+        <h3>Normal Version</h3>
+        <img class="minion-image normal-variant" src="" alt="Normal variant">
+      </div>
+        <div class="minion-version">
+          <h3>Golden Version</h3>
+          <img class="minion-image golden-variant" src="" alt="Golden variant">
+        </div>
+    </div>
+    <div class="minion-keywords">
+      <h3>Keywords</h3>
+      <ul id="keywords-list-builder"></ul>
+    </div>
+  </main>
+</section>
+
+
+
+  <!-- Custom Javascript-->
+  <script src="app.js"></script>
+</body>
+
+</html>

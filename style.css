@@ -1,0 +1,265 @@
+:root {
+  --mdc-theme-primary: #c9aa61;
+}
+
+body {
+  background-color: #e8d5aa;
+  margin: 0;
+}
+
+body.sheet-open {
+  overflow: hidden; /* Prevent body scrolling when sheet is open */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.logo-modal {
+  width: 220px;
+  margin-top: 20px;
+}
+
+.hsIcon {
+  margin-left: 10px;
+  width: 40px;
+}
+
+img {
+  max-width: 100vw;
+}
+
+.index-link {
+  color: white;
+}
+
+.small-image {
+  max-width: 40vw;
+}
+
+.big-image {
+  max-width: 60vw;
+}
+
+.mdc-tab-bar img {
+  width: 36px;
+  height: 36px;
+}
+
+.mdc-tab-bar-container {
+  position: relative;
+}
+
+#minions-container, #heroes-container, #builds-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.minion-card, .hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 200px;
+}
+
+.minion-card img, .hero-card img {
+  max-width: 200px;
+  height: auto;
+}
+
+.noScrollable {
+  overflow-y: hidden;
+}
+
+.sheet {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2e2e2e;
+  transition: 0.3s ease;
+  z-index: 1000; /* Ensure the sheet is on top */
+  overflow-y: auto; /* Allow scrolling within the sheet */
+}
+
+.sheet-out-of-view {
+  transform: translateX(-100%);
+}
+
+.sheet main {
+  min-height: calc(100vh - 56px - 48px); /* Adjust for header and footer height */
+  padding-top: 10vh; /* Add padding to ensure content is not under the header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sheet img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--mdc-theme-primary);
+  z-index: 1001; /* Ensure footer is above other content */
+}
+
+footer .mdc-tab__icon {
+  color: white !important;
+}
+
+/* Pagination */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination-controls button {
+  margin: 0 10px;
+}
+
+/* Search bar */
+#search-container {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.no-results {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.no-results img {
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.no-results p {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Sheet */
+.minion-details-content, .hero-details-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.minion-images, .hero-images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.hero-images {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-img, .hero-power-img {
+  max-width: 50vw;
+}
+
+.hero-name {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+}
+
+.minion-version, .hero-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+}
+
+.minion-version h3, .hero-details h3 {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.minion-keywords, #recommended-types-list, .hero-keywords, #keywords-list-builder {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  list-style-type: none;
+  padding: 0;
+}
+
+.minion-keywords h3, #recommended-types-list h3, .hero-keywords h3,  #keywords-list-builder h3{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.minion-keywords ul, #recommended-types-list ul, .hero-keywords ul, #keywords-list-builder ul{
+  padding: 0;
+  color: white;
+  list-style-type: none;
+}
+
+.minion-keywords ul li, .recommended-types-list ul li, .hero-keywords ul li,  #keywords-list-builder ul li{
+  color: white;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+/* Build minions list */
+.build-details {
+  display: none;
+}
+
+.build-details ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.build-details ul li{
+  margin: 20px;
+}
+
+.build-details ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.build-card {
+  margin-bottom: 50px;
+}
+
+.hidden {
+  display: none;
+}
