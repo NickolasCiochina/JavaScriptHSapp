@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const url = window.location.href;
       const shareData = {
         title: document.title,
-        text: 'Check out this awesome content!',
+        text: '',
         url: url
       };
 
